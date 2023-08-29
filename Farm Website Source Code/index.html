@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Organic Farming</title>
+        <link rel="icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Alkatra&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- SWIPER.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Remix Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <!-------------------- PRELOADER ------------------->
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+        
+        <!-------------------- SCROLL TO TOP BUTTON -------------------->
+        <div id="scrollTop" onclick="scrollToTop()">
+            <i class="ri-arrow-up-line"></i>
+        </div>
+
+        <!-------------------- Header -------------------->
+        <div class="home" id="home">
+            <nav>
+                <div class="nav-logo">
+                    <i class="ri-suitcase-line"></i>
+                    <h1 id="company" onclick="scrollToTop()">helloworld</h1>
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#home" class="pages">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="pages">About</a>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="nav-close" id="nav-close" onclick="hideNav()">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- TOGGLE DARK/LIGHT MODE Later -->
+                <i class="ri-moon-line" id="moon" onclick="changeToDark()"></i>
+                <i class="ri-sun-line" id="sun" onclick="changeToLight()"></i>
+
+                <div class="nav-toggle" id="nav-toggle" onclick="showNav()">
+                    <i class="ri-apps-line" id="toggle"></i>
+                </div>
+            </nav>
+            <!-- LANDING PAGE -->
+            <div class="header" id="header">
+                <div class="content" data-inViewport="slideTop">
+                    <h2 id="title"><span>smart</span> agriculture</h2>
+                    <p>
+                        We prosadadasdasvide hisfhsja Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut, at consequuntur vitae corrupti, quis fugit dolorem repellat saepe ad explicabo laboriosam et, quibusdam ut hic. Reiciendis autem illum quo!
+                    </p>
+                    <button onclick="scrollToAbout()">Learn more!<i class="ri-arrow-right-line"></i></button>
+                </div>
+                <img src="assets/basket.png" data-inViewport="slideLeft">
+            </div>
+        </div>
+        <!--------------------  ABOUT -------------------->
+        <div class="about" id="about">
+            <h2>About</h2>
+            <div class="content first">
+                <img src="assets/vege.jpg" data-inViewport="slideLeftDown">
+                <p data-inViewport="slideLeft"><span>Overview</span><br>Our mission is to provide customers with access to  <br>nutritious food that is free from genetically modified ingredients.<br>We work with local farmers who share our commitment to <br>organic agriculture, and we carefully select every product<br> that we sell to ensure that it meets our high quality standards.
+                </p>
+            </div>
+            <div class="content">
+                <p data-inViewport="slideLeft"><span>Why Choose Us?</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum minima eligendi tenetur amet dicta iure ipsam error deserunt voluptate, beatae eius consequuntur eveniet accusamus dolor cum quis facilis a!
+
+                </p>
+                <img src="assets/organic.jpg" id="special" data-inViewport="slideLeft">
+            </div>
+        </div>
+        <!-------------------- Featured Products ------------------
+        <div class="featured" id="featured"
+            <h2>Featured Products</h2>
+            <p>Here are some featured organic products we provide. Check them out!</p>
+            <!-- Swiper --
+            <div class="swiper" data-inViewport="slideTop">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Organic Carrot<br><sub>$3 per 500g</sub></h2>
+                        <img src="assets/carrots.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Juicy Oranges<br><sub>$3 per 1kg</sub></h2>
+                        <img src="assets/oranges.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Summer Watermelon<br><sub>$4 per 1kg</sub></h2>
+                        <img src="assets/watermelon.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Fresh Tomatoes<br><sub>$5 per 500g</sub></h2>
+                        <img src="assets/tomato.png">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+                            
+        <!-------------------- Tour ------------------
+        <div class="tour" id="tour">
+            <h2>Tour</h2>
+            <p>Sign up for our farm tour and get free organic <br>seeds for you to plant!</p>
+            <div class="signup">
+                <img src="assets/subscribe.svg">
+                <form>
+                    <input type="email" placeholder="Enter Email" required="required" id="email" autocomplete="off">
+                    <button type="submit" class="signUpBtn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+      
+        <!-------------------- FOOTER ------------------->
+        <div class="footer">
+            <div class="links">
+                <ul>
+                    <h2>Overview</h2>
+                    <li><a href="#">yess</a></li>
+                    <li><a href="#">gaysd</a></li>
+                    <li><a href="#">header</a></li>
+                </ul>
+                <ul>
+                    <h2>Others</h2>
+                    <li><a href="#">hi</a></li>
+                    <li><a href="#">hi</a></li>
+                    <li><a href="#">hello</a></li>
+                </ul>
+            </div>
+            <p>© Copyright shaurya rakesh <br>
+                
+            </p>
+        </div>
+               
+        <!-------------------- SCRIPT JS ------------------->
+        <script src="main.js"></script>
+    </body>
+</html>
